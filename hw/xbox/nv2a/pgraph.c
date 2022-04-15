@@ -4102,7 +4102,7 @@ static void pgraph_shader_update_constants(PGRAPHState *pg,
         pgraph_apply_scaling_factor(pg, &vp_width, &vp_height);
         glUniform2f(binding->gl_viewport_size_loc, vp_width, vp_height);
     }
-    
+
     /* Clipping regions */
     for (i = 0; i < 8; i++) {
         uint32_t x = pg->regs[NV_PGRAPH_WINDOWCLIPX0 + i * 4];
